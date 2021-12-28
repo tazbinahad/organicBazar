@@ -1,0 +1,177 @@
+/* Reset*/
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.containerPadding {
+  padding: 0 30px;
+}
+
+.heading h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #42c5bb;
+  z-index: 30;
+}
+header .actionBar .sidenavToggleBtn {
+  cursor: pointer;
+  margin-top: -5px;
+}
+header .actionBar .sidenavToggleBtn span {
+  background: #f5f5f7;
+  width: 25px;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .actionBar .logo img {
+  max-width: 80px;
+}
+header .actionBar .searchBox span {
+  color: #afafaf;
+  cursor: pointer;
+}
+header .actionBar .userBtns {
+  display: flex;
+  justify-content: end;
+}
+header .actionBar .userBtns .btns {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff33;
+  cursor: pointer;
+}
+header .actionBar .userBtns .btns:hover {
+  background-color: #42c5bb;
+}
+header .actionBar .userBtns .btns::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 0;
+  background-color: #ffffff33;
+}
+
+.sideBarMenu {
+  font-size: 14px;
+  color: #000;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 270px;
+  z-index: 100;
+  transition: 0.3s ease-in-out all;
+}
+.sideBarMenu .sideMenuContent {
+  position: fixed;
+  height: calc(100vh - 50px);
+  width: 270px;
+  background: #fff;
+  overflow-x: hidden;
+  z-index: 55;
+  border-right: 1px solid #ddd;
+}
+.sideBarMenu .sideMenuContent .sideMenu {
+  padding-left: 35px;
+}
+.sideBarMenu .sideMenuContent .sideMenu nav ul li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #000;
+  font-weight: 600;
+}
+.sideBarMenu .sideMenuContent .first {
+  border-bottom: 1px solid #ddd;
+}
+.sideBarMenu .sideMenuContent .secound {
+  border-bottom: 1px solid #ddd;
+}
+
+.sideBarToggle {
+  left: -270px;
+  margin-left: 0;
+}
+
+main {
+  padding-top: 50px;
+  margin-left: 270px;
+  transition: 0.3s ease-in-out all;
+}
+main .heroSlider .carousel .carousel-control-prev {
+  width: auto;
+  justify-content: left;
+}
+main .heroSlider .carousel .carousel-control-prev .controlPrev {
+  background-color: #fff;
+  color: #000;
+  font-size: 32px;
+}
+main .heroSlider .carousel .carousel-control-next {
+  width: auto;
+  justify-content: right;
+}
+main .heroSlider .carousel .carousel-control-next .controlNext {
+  background-color: #fff;
+  color: #000;
+  font-size: 32px;
+}
+main .productCategori .categoriList .categoriName {
+  margin-bottom: 20px;
+}
+main .productCategori .categoriList .categoriName .categoriBox {
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  color: #000;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+main .productCategori .categoriList .categoriName .categoriBox .categoriImage {
+  max-width: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */
