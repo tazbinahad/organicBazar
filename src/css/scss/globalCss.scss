@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import './globalVariables';
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+.h5,
+h5 {
+  font-size: 14px;
+}
+a {
+  color: $primaryColor;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.containerPadding {
+  padding: 0 30px;
+}
+.heading {
+  h2 {
+    color: $textColor;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+.poweredBy {
+  color: $primaryColor;
+}
+.price {
+  color: #eb0000;
+}
+// Button
+.tbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  display: block;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.btn-tcolor {
+  background: #eb0000;
+  border: 1px solid #eb0000;
+  color: #fff;
+}
+// Bs5 class modify
+.row {
+  margin: {
+    left: 0;
+    right: 0;
+  }
+}

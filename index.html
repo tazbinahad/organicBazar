@@ -12,6 +12,13 @@
     />
     <!-- IcoFont Css -->
     <link rel="stylesheet" href="./src/css/icofont/icofont.min.css" />
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <!-- Main Css -->
     <link rel="stylesheet" href="./src/css/style.css" />
 
@@ -20,7 +27,7 @@
 
   <body>
     <!-- Start Header Area -->
-    <header>
+    <header class="header">
       <div class="container-fluid h-100">
         <div class="actionBar h-100">
           <div class="row align-items-center h-100">
@@ -146,8 +153,99 @@
     </section>
     <!-- End sidebarmenu section -->
 
+    <!-- Start sideFloting cart -->
+    <section class="floatingCartWrapper">
+      <div class="floatingCartBtn"></div>
+      <div class="floatingCart" id="floatingCart">
+        <div class="cartHeader">
+          <div class="offer">
+            <p>Delivery charge FREE! from tk.999</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="item-count">
+                <i class="icofont-cart-alt"></i>
+                <span>23</span>
+                <span>ITEMS</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="close-btn">
+                <button>close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cartBody">
+          <div class="cartItem">
+            <div class="row">
+              <div class="col-sm-2">
+                <div class="photo">
+                  <img
+                    class="img-fluid"
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/682/icon/Shezan_Mango_Juice_250ml.png?1588877375"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6 ps-0">
+                <p class="name" data-bind="text:name">
+                  Shezan Mango Juice 250ml
+                </p>
+                <div class="quantity-control">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number">
+                        <i class="icofont-minus"></i>
+                      </button>
+                    </span>
+                    <input
+                      type="text"
+                      id="qnt"
+                      name="quantity"
+                      class="form-control input-number"
+                      disabled=""
+                      value="10"
+                    />
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number">
+                        <i class="icofont-plus"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 ps-0">
+                <div class="price">৳ 120.00</div>
+                <div class="price" style="display: none">৳ 0</div>
+              </div>
+              <div class="col-sm-1">
+                <div class="remove-icon">
+                  <button type="button"><i class="icofont-close"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cartFooter">
+          <a class="tbtn btn-tcolor" href="#">
+            <strong>checkout</strong>
+          </a>
+          <a class="tbtn btn-tcolor" href="#">
+            <strong>
+              <span>৳</span>
+              <span>120.0</span>
+            </strong>
+          </a>
+        </div>
+        <div class="cartLeftCloneBtn" onclick="closeCart()">
+          <i class="icofont-thin-right"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Start sideFloting cart -->
+
     <!-- Start Main Area -->
-    <main id="main">
+    <main class="main" id="main">
       <!-- Start slider section -->
       <section class="heroSlider">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -303,11 +401,716 @@
         </div>
       </section>
       <!-- End productCategori section -->
+
+      <!-- Start HomeBanner Section -->
+      <section class="homeBanner">
+        <div class="container">
+          <div class="banner">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://dtt1c9id3txwq.cloudfront.net/themes/13670/assets/images/exe-discount_a4d936a4a5d823ec767a0bf3fcd6d529b91dc421.jpg?1606320965"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://dtt1c9id3txwq.cloudfront.net/themes/13670/assets/images/exe-discount_a4d936a4a5d823ec767a0bf3fcd6d529b91dc421.jpg?1606320965"
+                    alt="image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End HomeBanner Section -->
+
+      <!-- Start Home Product Slider -->
+      <section class="homeProductSlider">
+        <div class="container">
+          <div class="heading">
+            <h2>Beverages (চা ও অন্যান্য পানীয়)</h2>
+            <a class="viewAll" href="#">
+              <span>View All</span>
+            </a>
+          </div>
+          <div class="productSliderHome">
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Home Product Slider -->
+
+      <!-- Start Home Product Slider -->
+      <section class="homeProductSlider">
+        <div class="container">
+          <div class="heading">
+            <h2>Food & Grocery (খাদ্য সামগ্রী)</h2>
+            <a class="viewAll" href="#">
+              <span>View All</span>
+            </a>
+          </div>
+          <div class="productSliderHome">
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Home Product Slider -->
+
+      <!-- Start HomeBanner Section -->
+      <section class="homeBanner">
+        <div class="container">
+          <div class="banner">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://dtt1c9id3txwq.cloudfront.net/themes/13670/assets/images/exe-discount_a4d936a4a5d823ec767a0bf3fcd6d529b91dc421.jpg?1606320965"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://dtt1c9id3txwq.cloudfront.net/themes/13670/assets/images/exe-discount_a4d936a4a5d823ec767a0bf3fcd6d529b91dc421.jpg?1606320965"
+                    alt="image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End HomeBanner Section -->
+
+      <!-- Start Home Product Slider -->
+      <section class="homeProductSlider">
+        <div class="container">
+          <div class="heading">
+            <h2>Food & Grocery (খাদ্য সামগ্রী)</h2>
+            <a class="viewAll" href="#">
+              <span>View All</span>
+            </a>
+          </div>
+          <div class="productSliderHome">
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+            <div class="singleProductSlide">
+              <a href="/">
+                <div class="productImage">
+                  <img
+                    src="https://dtt1c9id3txwq.cloudfront.net/assets/images/000/878/581/medium/fujiapple.PNG?1588869360"
+                    alt="img"
+                  />
+                  <div class="actioBtn">
+                    <span><i class="icofont-eye-alt"></i></span>
+                    <span><i class="icofont-heart-alt"></i></span>
+                  </div>
+                </div>
+              </a>
+              <div class="productName">
+                <a href="#">ফুজি আপেল চায়না 1kg (China Fuji Apple / Apel)</a>
+              </div>
+              <div class="price">
+                <span>৳ 200.00</span>
+              </div>
+              <div class="addCartContent">
+                <div class="addCart">
+                  <i class="icofont-cart"></i>
+                  <span>Add to Cart </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Home Product Slider -->
+
+      <!-- Start HomeBanner Section -->
+      <section class="homeBanner">
+        <div class="container">
+          <div class="banner">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://dtt1c9id3txwq.cloudfront.net/themes/13670/assets/images/exe-discount_a4d936a4a5d823ec767a0bf3fcd6d529b91dc421.jpg?1606320965"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://dtt1c9id3txwq.cloudfront.net/themes/13670/assets/images/exe-discount_a4d936a4a5d823ec767a0bf3fcd6d529b91dc421.jpg?1606320965"
+                    alt="image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End HomeBanner Section -->
     </main>
     <!-- End Main Area -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="aboutUs">
+              <h5>About US</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="footerLink">
+              <h5>Footer Link</h5>
+              <div class="links">
+                <ul>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Terms And Conditions</a></li>
+                  <li><a href="#">Order Tracking</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="newsLetter">
+              <h5>Sign up for the latest offers and promotions</h5>
+              <div class="input-group searchBox">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Please enter an Email"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="icofont-paper-plane"></i>
+                </span>
+              </div>
+            </div>
+            <div class="socialIcon text-center">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icofont-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icofont-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icofont-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icofont-pinterest"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icofont-youtube-play"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright">
+              <p>
+                © Copyright 2021-grocery. Powered By
+                <span class="poweredBy"><a href="#">Storrea</a></span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="img-fluid"
+              src="https://securepay.sslcommerz.com/public/image/SSLCommerz-Pay-With-logo-All-Size-01.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Js -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="./src/js/custom.js"></script>
   </body>
 </html>
