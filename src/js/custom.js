@@ -1,25 +1,37 @@
-// SideBar
-const sideBarMenu = document.getElementById('sideBar');
-const toggleBtn = document.getElementById('toggleBtn');
-const Main = document.getElementById('main');
-const Footer = document.getElementById('footer');
-const closeFloatingCart = document.getElementsByClassName('cartLeftCloneBtn');
-const closeCarts = document.getElementsByClassName('close-btn');
-const floatingCart = document.getElementById('floatingCart');
+document.addEventListener('DOMContentLoaded', function (event) {
+  console.log('DOM Is Ready for manipulation');
+  // -----------------------------------------
+  // SideBar
+  const sideBarMenu = document.getElementById('sideBar');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const Main = document.getElementById('main');
+  const Footer = document.getElementById('footer');
+  const floatingCart = document.getElementById('floatingCart');
 
-function closeCart() {
-  floatingCart.classList.add('closed');
-}
-toggleBtn.addEventListener('click', function () {
-  sideBarMenu.classList.toggle('sideBarToggle');
-  Main.classList.toggle('sideBarToggle');
-  Footer.classList.toggle('sideBarToggle');
+  toggleBtn.addEventListener('click', function () {
+    sideBarMenu.classList.toggle('sideBarToggle');
+    Main.classList.toggle('sideBarToggle');
+    Footer.classList.toggle('sideBarToggle');
+  });
 });
-// Close floating cart
-// closeFloatingCart.addEventListener('click', function () {
-//   console.log('clicked');
-// });
-
+// -----------------------------------------
+// Click event functions
+function openCart() {
+  let hasClass = floatingCart.classList.contains('closed');
+  if (hasClass) {
+    floatingCart.classList.remove('closed');
+    floatingCart.classList.add('open');
+  }
+}
+function closeCart() {
+  let hasClass = floatingCart.classList.contains('open');
+  if (hasClass) {
+    floatingCart.classList.remove('open');
+    floatingCart.classList.add('closed');
+  }
+}
+// -------------------------------------------
+// All Jquery Code
 // Slick Script for:productSliderHome
 jQuery(document).ready(function ($) {
   $('.productSliderHome').slick({

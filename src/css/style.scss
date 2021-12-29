@@ -383,13 +383,54 @@
 }
 
 .floatingCartWrapper {
+  .floatingCartBtn {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    height: 90px;
+    width: 70px;
+    background: $white;
+    -moz-box-shadow: 0 0 10px 2px #757575;
+    -webkit-box-shadow: 0 0 10px 2px #757575;
+    box-shadow: 0 0 10px 2px #757575;
+    cursor: pointer;
+    text-align: center;
+    z-index: 100;
+    .cartIcon {
+      background: #ccc;
+      color: $red;
+      font-size: 20px;
+      padding: 1px;
+      i {
+        font-size: 22px;
+      }
+      h6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .amounts {
+      font-size: 10px;
+      line-height: 15px;
+      height: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
   .floatingCart {
     position: fixed;
     height: 100%;
     width: 370px;
     background-color: $white;
     top: 50px;
-    right: 0;
+    right: -450px;
     z-index: 100;
     -moz-box-shadow: -2px 5px 10px 2px #ddd;
     -webkit-box-shadow: -2px 5px 10px 2px #ddd;
@@ -399,6 +440,9 @@
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    &.open {
+      right: 0;
+    }
     &.closed {
       right: -450px;
     }

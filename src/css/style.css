@@ -29,6 +29,11 @@ h5 {
   font-size: 14px;
 }
 
+.h6,
+h6 {
+  font-size: 12px;
+}
+
 a {
   color: #42c5bb;
   text-decoration: none;
@@ -410,13 +415,54 @@ button:focus {
   color: #000;
 }
 
+.floatingCartWrapper .floatingCartBtn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  height: 90px;
+  width: 70px;
+  background: #fff;
+  -moz-box-shadow: 0 0 10px 2px #757575;
+  -webkit-box-shadow: 0 0 10px 2px #757575;
+  box-shadow: 0 0 10px 2px #757575;
+  cursor: pointer;
+  text-align: center;
+  z-index: 100;
+}
+.floatingCartWrapper .floatingCartBtn .cartIcon {
+  background: #ccc;
+  color: #eb0000;
+  font-size: 20px;
+  padding: 1px;
+}
+.floatingCartWrapper .floatingCartBtn .cartIcon i {
+  font-size: 22px;
+}
+.floatingCartWrapper .floatingCartBtn .cartIcon h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.floatingCartWrapper .floatingCartBtn .amounts {
+  font-size: 10px;
+  line-height: 15px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .floatingCartWrapper .floatingCart {
   position: fixed;
   height: 100%;
   width: 370px;
   background-color: #fff;
   top: 50px;
-  right: 0;
+  right: -450px;
   z-index: 100;
   -moz-box-shadow: -2px 5px 10px 2px #ddd;
   -webkit-box-shadow: -2px 5px 10px 2px #ddd;
@@ -426,6 +472,9 @@ button:focus {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+.floatingCartWrapper .floatingCart.open {
+  right: 0;
 }
 .floatingCartWrapper .floatingCart.closed {
   right: -450px;

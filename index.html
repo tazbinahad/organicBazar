@@ -155,8 +155,22 @@
 
     <!-- Start sideFloting cart -->
     <section class="floatingCartWrapper">
-      <div class="floatingCartBtn"></div>
-      <div class="floatingCart" id="floatingCart">
+      <div class="floatingCartBtn" id="floatingCartBtn" onclick="openCart()">
+        <div class="cartIcon">
+          <i class="icofont-cart-alt"></i>
+          <h6>
+            <strong><span class="cart-count">1</span> ITEMS</strong>
+          </h6>
+        </div>
+        <div class="amounts">
+          <span>৳</span>
+          <span>
+            <strong class="cart-totalPrice">120.0</strong>
+          </span>
+        </div>
+      </div>
+
+      <div class="floatingCart closed" id="floatingCart">
         <div class="cartHeader">
           <div class="offer">
             <p>Delivery charge FREE! from tk.999</p>
@@ -170,7 +184,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="close-btn">
+              <div class="close-btn" onclick="closeCart()">
                 <button>close</button>
               </div>
             </div>
