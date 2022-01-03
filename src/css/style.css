@@ -106,6 +106,7 @@ button:focus {
   height: 50px;
   width: 100%;
   background: #42c5bb;
+  overflow: hidden;
   z-index: 10000;
 }
 .header .actionBar .sidenavToggleBtn {
@@ -132,16 +133,22 @@ button:focus {
   display: flex;
   justify-content: end;
 }
+.header .actionBar .userBtns .signUp {
+  display: none !important;
+}
 .header .actionBar .userBtns .btns {
   display: flex;
   align-items: center;
   position: relative;
   height: 100%;
   color: #fff;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #ffffff33;
   cursor: pointer;
+}
+.header .actionBar .userBtns .btns span {
+  padding: 0 3px;
 }
 .header .actionBar .userBtns .btns:hover {
   background-color: #42c5bb;
@@ -212,6 +219,7 @@ button:focus {
   padding-top: 50px;
   margin-left: 270px;
   transition: 0.3s ease-in-out all;
+  overflow: hidden;
 }
 .main .heroSlider .carousel .carousel-control-prev {
   width: auto;
@@ -294,6 +302,9 @@ button:focus {
   text-align: center;
   position: relative;
   cursor: pointer;
+}
+.main .homeProductSlider .productSliderHome .singleProductSlide .productImage img {
+  margin: 0 auto;
 }
 .main .homeProductSlider .productSliderHome .singleProductSlide .productImage:hover .actioBtn {
   opacity: 1;
@@ -592,6 +603,249 @@ button:focus {
 }
 .floatingCartWrapper .floatingCart .cartLeftCloneBtn i {
   font-size: 30px;
+}
+
+/* Responsive CSS */
+@media (max-width: 1399.98px) {
+  body,
+.form-control {
+    font-size: 13px;
+  }
+
+  .h5,
+h5 {
+    font-size: 13px;
+  }
+
+  .h6,
+h6 {
+    font-size: 12px;
+  }
+
+  .heading h2 {
+    font-size: 18px;
+  }
+
+  .sideBarMenu {
+    font-size: 13px;
+  }
+
+  .homeBanner {
+    margin: 10px 0;
+  }
+
+  .main .homeProductSlider .productSliderHome .singleProductSlide .productImage {
+    height: 230px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1199.98px) {
+  body,
+.form-control {
+    font-size: 12px;
+  }
+
+  .h5,
+h5 {
+    font-size: 12px;
+  }
+
+  .h6,
+h6 {
+    font-size: 11px;
+  }
+
+  .heading h2 {
+    font-size: 16px;
+  }
+
+  .sideBarMenu {
+    font-size: 12px;
+  }
+
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .header .actionBar .userBtns .btns span {
+    padding: 0 2px;
+  }
+
+  .main .homeProductSlider .productSliderHome .singleProductSlide {
+    height: 290px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .productImage {
+    height: 180px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .addCartContent .addCart {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .reverse-large {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  body,
+.form-control {
+    font-size: 11px;
+  }
+
+  .h5,
+h5 {
+    font-size: 11px;
+  }
+
+  .h6,
+h6 {
+    font-size: 10px;
+  }
+
+  .heading h2 {
+    font-size: 14px;
+  }
+
+  .sideBarMenu {
+    font-size: 11px;
+  }
+
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .header .actionBar .userBtns .btns span {
+    padding: 0 2px;
+  }
+
+  .main .homeProductSlider .productSliderHome .singleProductSlide {
+    height: 245px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .productImage {
+    height: 135px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .addCartContent .addCart {
+    font-size: 11px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 767.98px) {
+  .homeBanner .row > * {
+    margin-bottom: 10px;
+  }
+
+  body,
+.form-control {
+    font-size: 10px;
+  }
+
+  .h5,
+h5 {
+    font-size: 10px;
+  }
+
+  .h6,
+h6 {
+    font-size: 9px;
+  }
+
+  .heading h2 {
+    font-size: 12px;
+  }
+
+  .sideBarMenu {
+    font-size: 10px;
+  }
+
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .header .actionBar .userBtns .btns span {
+    padding: 0 2px;
+  }
+
+  .main .homeProductSlider .productSliderHome .singleProductSlide {
+    height: 225px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .productImage {
+    height: 120px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .addCartContent .addCart {
+    font-size: 10px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .col-xs-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-xs-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  body,
+.form-control {
+    font-size: 9px;
+  }
+
+  .h5,
+h5 {
+    font-size: 9px;
+  }
+
+  .h6,
+h6 {
+    font-size: 8px;
+  }
+
+  .heading h2 {
+    font-size: 10px;
+  }
+
+  .sideBarMenu {
+    font-size: 9px;
+  }
+
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .header .actionBar .userBtns .btns span {
+    padding: 0 2px;
+  }
+
+  .main .homeProductSlider .productSliderHome .singleProductSlide {
+    height: 235px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .productImage {
+    height: 130px;
+  }
+  .main .homeProductSlider .productSliderHome .singleProductSlide .addCartContent .addCart {
+    font-size: 9px;
+  }
+
+  .footer p {
+    font-size: 9px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,7 @@
   height: 50px;
   width: 100%;
   background: $primaryColor;
+  overflow: hidden;
   z-index: 10000;
   .actionBar {
     .sidenavToggleBtn {
@@ -47,16 +48,22 @@
     .userBtns {
       display: flex;
       justify-content: end;
+      .signUp {
+        display: none !important;
+      }
       .btns {
         display: flex;
         align-items: center;
         position: relative;
         height: 100%;
         color: $white;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
         background-color: #ffffff33;
         cursor: pointer;
+        span {
+          padding: 0 3px;
+        }
       }
       .btns:hover {
         background-color: $primaryColor;
@@ -139,6 +146,7 @@
   padding-top: 50px;
   margin-left: 270px;
   transition: 0.3s ease-in-out all;
+  overflow: hidden;
   // HeroSlider Style
   .heroSlider {
     .carousel {
@@ -240,6 +248,9 @@
           height: 250px;
           text-align: center;
           position: relative;
+          img {
+            margin: 0 auto;
+          }
           cursor: pointer;
           &:hover {
             .actioBtn {
@@ -565,6 +576,349 @@
       i {
         font-size: 30px;
       }
+    }
+  }
+}
+// d-none d-md-flex
+/* Responsive CSS */
+
+// .d-md-none .d-lg-block .d-sm-none .d-md-block .d-none .d-sm-block
+$xxl: 1399.98px;
+$xl: 1199.98px;
+$lg: 991.98px;
+$md: 767.98px;
+$sm: 575.98px;
+$xs: 0;
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: $xxl) {
+  // Max-width: 1399.98px
+  // Font Size
+  $bodyFont: 13px;
+  $h5: 13px;
+  $h6: 12px;
+  $sideBarFont: 13px;
+  $headingFont: 18px;
+  $singleProductImageHeight: 230px;
+  // ------------
+  // Reset
+  body,
+  .form-control {
+    font-size: $bodyFont;
+  }
+  .h5,
+  h5 {
+    font-size: $h5;
+  }
+  .h6,
+  h6 {
+    font-size: $h6;
+  }
+  .heading h2 {
+    font-size: $headingFont;
+  }
+  // Sidebar
+  .sideBarMenu {
+    font-size: $sideBarFont;
+  }
+  // Home Banner
+  .homeBanner {
+    margin: 10px 0;
+  }
+  // Main
+  .main {
+    .homeProductSlider {
+      .productSliderHome {
+        .singleProductSlide {
+          .productImage {
+            height: $singleProductImageHeight;
+          }
+        }
+      }
+    }
+  }
+  // Footer
+  .footer {
+    p {
+      font-size: $bodyFont;
+    }
+  }
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: $xl) {
+  // Max-width: 1199.98px
+  // Font Size
+  $bodyFont: 12px;
+  $h5: 12px;
+  $h6: 11px;
+  $sideBarFont: 12px;
+  $headingFont: 16px;
+  $singleProductSlideHeight: 290px;
+  $singleProductImageHeight: 180px;
+  // ------------
+  // Reset
+  body,
+  .form-control {
+    font-size: $bodyFont;
+  }
+  .h5,
+  h5 {
+    font-size: $h5;
+  }
+  .h6,
+  h6 {
+    font-size: $h6;
+  }
+  .heading h2 {
+    font-size: $headingFont;
+  }
+  // Sidebar Menu
+  .sideBarMenu {
+    font-size: $sideBarFont;
+  }
+  // Header
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+    span {
+      padding: 0 2px;
+    }
+  }
+  // Main
+  .main {
+    .homeProductSlider {
+      .productSliderHome {
+        .singleProductSlide {
+          height: $singleProductSlideHeight;
+          .productImage {
+            height: $singleProductImageHeight;
+          }
+          .addCartContent {
+            .addCart {
+              font-size: $bodyFont;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer
+  .footer {
+    p {
+      font-size: $bodyFont;
+    }
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: $lg) {
+  // Max-width: 991.98px
+  // Font Size
+  $bodyFont: 11px;
+  $h5: 11px;
+  $h6: 10px;
+  $sideBarFont: 11px;
+  $headingFont: 14px;
+  $singleProductSlideHeight: 245px;
+  $singleProductImageHeight: 135px;
+  // ------------
+  .reverse-large {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  // Reset
+  body,
+  .form-control {
+    font-size: $bodyFont;
+  }
+  .h5,
+  h5 {
+    font-size: $h5;
+  }
+  .h6,
+  h6 {
+    font-size: $h6;
+  }
+  .heading h2 {
+    font-size: $headingFont;
+  }
+  // Sidebar Menu
+  .sideBarMenu {
+    font-size: $sideBarFont;
+  }
+  // Header
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+    span {
+      padding: 0 2px;
+    }
+  }
+  // Main
+  .main {
+    .homeProductSlider {
+      .productSliderHome {
+        .singleProductSlide {
+          height: $singleProductSlideHeight;
+          .productImage {
+            height: $singleProductImageHeight;
+          }
+          .addCartContent {
+            .addCart {
+              font-size: $bodyFont;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer
+  .footer {
+    p {
+      font-size: $bodyFont;
+    }
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: $md) {
+  .homeBanner {
+    .row > * {
+      margin-bottom: 10px;
+    }
+  }
+  // Max-width: 767.98px
+  // Font Size
+  $bodyFont: 10px;
+  $h5: 10px;
+  $h6: 9px;
+  $sideBarFont: 10px;
+  $headingFont: 12px;
+  $singleProductSlideHeight: 225px;
+  $singleProductImageHeight: 120px;
+
+  // Reset
+  body,
+  .form-control {
+    font-size: $bodyFont;
+  }
+  .h5,
+  h5 {
+    font-size: $h5;
+  }
+  .h6,
+  h6 {
+    font-size: $h6;
+  }
+  .heading h2 {
+    font-size: $headingFont;
+  }
+  // Sidebar Menu
+  .sideBarMenu {
+    font-size: $sideBarFont;
+  }
+  // Header
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+    span {
+      padding: 0 2px;
+    }
+  }
+  // Main
+  .main {
+    .homeProductSlider {
+      .productSliderHome {
+        .singleProductSlide {
+          height: $singleProductSlideHeight;
+          .productImage {
+            height: $singleProductImageHeight;
+          }
+          .addCartContent {
+            .addCart {
+              font-size: $bodyFont;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer
+  .footer {
+    p {
+      font-size: $bodyFont;
+    }
+  }
+}
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: $sm) {
+  .col-xs-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col-xs-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+  // Max-width: 575.98px
+  // Font Size
+  $bodyFont: 9px;
+  $h5: 9px;
+  $h6: 8px;
+  $sideBarFont: 9px;
+  $headingFont: 10px;
+  $singleProductSlideHeight: 235px;
+  $singleProductImageHeight: 130px;
+
+  // Reset
+  body,
+  .form-control {
+    font-size: $bodyFont;
+  }
+  .h5,
+  h5 {
+    font-size: $h5;
+  }
+  .h6,
+  h6 {
+    font-size: $h6;
+  }
+  .heading h2 {
+    font-size: $headingFont;
+  }
+  // Sidebar Menu
+  .sideBarMenu {
+    font-size: $sideBarFont;
+  }
+  // Header
+  .header .actionBar .userBtns .btns {
+    padding-left: 4px;
+    padding-right: 4px;
+    span {
+      padding: 0 2px;
+    }
+  }
+  // Main
+  .main {
+    .homeProductSlider {
+      .productSliderHome {
+        .singleProductSlide {
+          height: $singleProductSlideHeight;
+          .productImage {
+            height: $singleProductImageHeight;
+          }
+          .addCartContent {
+            .addCart {
+              font-size: $bodyFont;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer
+  .footer {
+    p {
+      font-size: $bodyFont;
     }
   }
 }
