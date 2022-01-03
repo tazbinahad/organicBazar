@@ -725,6 +725,20 @@ h6 {
     padding: 0 2px;
   }
 
+  .sideBarMenu {
+    width: 230px;
+  }
+  .sideBarMenu .sideMenuContent {
+    width: 230px;
+  }
+
+  .floatingCartWrapper .floatingCart {
+    width: 300px;
+  }
+  .floatingCartWrapper .floatingCart.closed {
+    right: -350px;
+  }
+
   .main .homeProductSlider .productSliderHome .singleProductSlide {
     height: 245px;
   }
@@ -775,6 +789,20 @@ h6 {
     padding: 0 2px;
   }
 
+  .sideBarMenu {
+    width: 220px;
+    left: -220px;
+  }
+  .sideBarMenu.sideBarToggle {
+    left: 0;
+  }
+  .sideBarMenu .sideMenuContent {
+    width: 220px;
+  }
+
+  .main {
+    margin-left: 0;
+  }
   .main .homeProductSlider .productSliderHome .singleProductSlide {
     height: 225px;
   }
@@ -785,16 +813,39 @@ h6 {
     font-size: 10px;
   }
 
+  .footer {
+    margin-left: 0;
+  }
   .footer p {
     font-size: 10px;
   }
 }
 @media (max-width: 575.98px) {
+  .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-xs-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
   .col-xs-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .col-xs-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-xs-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 
   .col-xs-8 {
@@ -831,6 +882,20 @@ h6 {
   }
   .header .actionBar .userBtns .btns span {
     padding: 0 2px;
+  }
+
+  .sideBarMenu {
+    width: 200px;
+  }
+  .sideBarMenu .sideMenuContent {
+    width: 200px;
+  }
+
+  .floatingCartWrapper .floatingCart {
+    width: 270px;
+  }
+  .floatingCartWrapper .floatingCart.closed {
+    right: -320px;
   }
 
   .main .homeProductSlider .productSliderHome .singleProductSlide {
